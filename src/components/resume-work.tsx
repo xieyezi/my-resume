@@ -27,16 +27,16 @@ export function ResumeWork() {
                     </div>
                   </header>
 
-                  <div className='item-description py-2'>
+                  <div className='item-description py-2 leading-6'>
                     <p>
-                      <strong>Pietra </strong>- 美国网红电商平台 (
+                      <strong> Pietra </strong>- 美国网红电商平台 (
                       <a href='https://www.pietrastudio.com' rel='noopener noreferrer' target='_blank'>
                         https://www.pietrastudio.com
                       </a>
                       )
                     </p>
                     <p />
-                    <p>负责星盘系统 Web 端架构设计以及开发工作。</p>
+                    <p>负责Pietra Creator Admin 以及 Pietra Website 的开发工作。</p>
                     <p>
                       作为一个全新的项目，使用了目前 <strong>React</strong> 最新的技术栈：
                     </p>
@@ -96,7 +96,7 @@ export function ResumeWork() {
                     </div>
                   </header>
 
-                  <div className='item-description py-2'>
+                  <div className='item-description py-2 leading-6'>
                     <p>
                       <strong>主导和开发项目基础组件库 Ali components(</strong>
                       <a href='https://github.com/fake' rel='noopener noreferrer' target='_blank'>
