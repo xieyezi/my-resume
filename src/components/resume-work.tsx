@@ -29,7 +29,7 @@ export function ResumeWork() {
 
                   <div className='item-description py-2'>
                     <p>
-                      <strong>Pietra </strong>- 美国网红电商平台(
+                      <strong>Pietra </strong>- 美国网红电商平台 (
                       <a href='https://www.pietrastudio.com' rel='noopener noreferrer' target='_blank'>
                         https://www.pietrastudio.com
                       </a>

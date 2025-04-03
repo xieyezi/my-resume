@@ -13,7 +13,7 @@ export default function Home() {
         <div className='resume-read-container'>
           <div className='fullheight-fix bg-white dark:bg-neutral-900'>
             <div className='easycv-template resume-read container mx-auto max-w-screen-lg text-sm font-plex'>
-              <main className='px-8 pt-8 bg-white text-gray-500 dark:bg-neutral-900 dark:text-gray-300'>
+              <main className='px-0 md:px-8 pt-8 bg-white text-gray-500 dark:bg-neutral-900 dark:text-gray-300'>
                 <ResumeProfile />
                 <div className='resume-content'>
                   <ResumeWork />
