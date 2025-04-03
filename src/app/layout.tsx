@@ -7,34 +7,28 @@ import ClientBody from "./ClientBody";
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-ibm-plex-sans",
+  variable: "--font-ibm-plex-sans"
 });
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-noto-sans-sc",
+  variable: "--font-noto-sans-sc"
 });
 
 export const metadata: Metadata = {
-  title: "简单简历 - Alpine 模版",
-  description: "简单简历 - 5分钟创建专业的互联网人才简历",
+  title: "苏业纯的个人简历",
+  description: "苏业纯 - 前端工程师"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen font-sans antialiased",
-          ibmPlexSans.variable,
-          notoSansSC.variable,
-        )}
-      >
+    <html lang='zh-CN'>
+      <body className={cn("min-h-screen font-sans antialiased", ibmPlexSans.variable, notoSansSC.variable)}>
         <ClientBody>{children}</ClientBody>
       </body>
     </html>

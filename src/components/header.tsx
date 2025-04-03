@@ -2,7 +2,6 @@
 
 import { Sun, Moon, Download, Share2 } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
 
 export function Header() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
