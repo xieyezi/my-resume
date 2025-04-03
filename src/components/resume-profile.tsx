@@ -11,7 +11,7 @@ export function ResumeProfile() {
 
       <div className='header-info md:text-left text-center mt-2 md:mt-0'>
         <h1 className='text-xl mb-2 text-gray-800 dark:text-white font-semibold'>苏业纯</h1>
-        <h2 className='mb-2 text-gray-600 dark:text-gray-300'>高级前端工程师 重庆</h2>
+        <h2 className='mb-2 text-gray-600 dark:text-gray-300'>高级前端工程师/架构师/个人开发者 重庆</h2>
 
         <ul className='link-list text-left flex md:items-center flex-wrap'>
           <li className='mr-3 mb-2 flex items-center'>
