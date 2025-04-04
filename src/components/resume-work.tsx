@@ -36,38 +36,47 @@ export function ResumeWork() {
                       )
                     </p>
                     <p />
-                    <p>负责Pietra Creator Admin 以及 Pietra Website 的开发工作。</p>
-                    <p>
-                      作为一个全新的项目，使用了目前 <strong>React</strong> 最新的技术栈：
-                    </p>
+                    <p>负责Pietra Creator Admin, Pietra Website 以及团队内技术工具的开发工作。</p>
+                    <p>主要成就：</p>
                     <ul className='list-disc pl-5 space-y-1'>
                       <li>
-                        使用 <strong>Next.js</strong> 以及 <strong>Typescript</strong> 作为开发框架和语言。
+                        总用户 <strong>400w+</strong>，月活用户 <strong>80w+</strong>
                       </li>
                       <li>
-                        使用 <strong>Zustand</strong>，<strong>React Router</strong> 以及 <strong>React Query</strong> 等一系列最新周边生态工具。
+                        官网月访问量 <strong>90k+</strong>，月曝光量 <strong>10000k+</strong>
                       </li>
                       <li>
-                        使用 <strong>Radix UI</strong> 以及<strong>Tailwind.css</strong> 作为无样式组件库以及样式解决方案。
+                        月 GMV <strong>¥24亿+ </strong>，月新增用户 <strong>20w+</strong>，月新增供应商 <strong>1000+</strong>
                       </li>
                     </ul>
                     <div className='py-2' />
-                    <p>使用如下技术攻克一系列技术难题：</p>
+                    <p>主要贡献：</p>
                     <ul className='list-disc pl-5 space-y-1'>
                       <li>
-                        二次封装 <strong>React Virtualized</strong> 借助虚拟渲染的设计，提升大数据量渲染的性能问题。
+                        <strong>工程化建设</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>开发 Vite/Webpack 通用插件，实现组件、图标、工具库自动导入，减少手动导入代码 40%</li>
+                          <li>搭建 Sentry + APM 监控体系，错误捕获率 98%，线上问题响应时间 ≤30min</li>
+                          <li>优化 CDN 图片存储方案（S3+CloudFront），月成本从 5.2 万降至 2.8 万</li>
+                        </ol>
                       </li>
+
                       <li>
-                        <strong>Formik</strong> 作为表单状态管理库，提升大表单数据的性能问题。
+                        <strong>架构升级 & 性能优化</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>重构官网至 Next.js，SSR 服务端渲染 + ISR 增量静态生成，首屏加载从 7.1s→1.2s，SEO 流量 +52%</li>
+                          <li>Bundle 优化：Tree-shaking + 动态导入，生产包减少67%；图片加载从 900ms→300ms</li>
+                          <li>Google 评分提升：Search Console 评分从 40→85+，TTFB 降低 58%</li>
+                        </ol>
                       </li>
+
                       <li>
-                        使用&nbsp;<strong>Framer Motion</strong>&nbsp;添加高质量的交互效果。
-                      </li>
-                      <li>
-                        封装 <strong>Zustand</strong> 的功能实现状态的 Redo/Undo 功能。
-                      </li>
-                      <li>
-                        通过 文件分片 / 分片生成 Hash / 合并请求 实现<strong>大文件上传</strong>以及<strong>断点续传</strong>。
+                        <strong>团队提效</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>开发 UI 组件库，覆盖 85% 业务场景，开发效率 +60%，设计还原度 95%</li>
+                          <li>制定设计 Token 规范，统一色彩/间距/动效，自动生成 TypeScript 类型，API 文档覆盖率 100%</li>
+                          <li>搭建技术文档中心，沉淀通用开发规范，建立团队 Git 工作流</li>
+                        </ol>
                       </li>
                     </ul>
                   </div>
@@ -91,48 +100,62 @@ export function ResumeWork() {
                     <h3 className='font-semibold mb-2 dark:text-white'>前端技术架构师</h3>
                     <div className='flex justify-between flex-wrap mb-2 text-gray-400 dark:opacity-80'>
                       <h4>
-                        长安汽车有限公司 <span className='ml-2'>重庆</span>
+                        长安汽车 <span className='ml-2'>重庆</span>
                       </h4>
                     </div>
                   </header>
 
                   <div className='item-description py-2 leading-6'>
                     <p>
-                      <strong>主导和开发项目基础组件库 Ali components(</strong>
-                      <a href='https://github.com/fake' rel='noopener noreferrer' target='_blank'>
-                        https://github.com/fake
+                      <strong> 长安汽车 </strong>- 中国本土著名汽车品牌 (
+                      <a href='https://www.changan.com.cn' rel='noopener noreferrer' target='_blank'>
+                        https://www.changan.com.cn
                       </a>
-                      <strong>)</strong>
+                      )
                     </p>
+                    <p />
+                    <p>负责长安汽车车控APP的SDK前端架构设计与开发工作，以及前端团队管理工作。</p>
+                    <p>主要成就：</p>
                     <ul className='list-disc pl-5 space-y-1'>
                       <li>
-                        使用 <strong>React</strong> 以及 <strong>Typescript</strong> 作为开发框架和语言。
+                        总用户 <strong>400w+</strong>，月活用户 <strong>80w+</strong>
                       </li>
                       <li>
-                        设计为无样式 <strong>headless</strong> 组件库, 实现良好的可访问性。
+                        官网月访问量 <strong>90k+</strong>，月曝光量 <strong>10000k+</strong>
                       </li>
                       <li>
-                        高度<strong>自定义</strong>以及<strong>可组合式</strong>的 API 设计
-                      </li>
-                      <li>
-                        使用 <strong>Jest</strong> 以及<strong> React Testing Library</strong> 实现单测覆盖率大于 90%
-                      </li>
-                      <li>
-                        结合 <strong>Github Actions</strong> 完成CI/CD 以及自动发布至内部 NPM
+                        月 GMV <strong>¥24亿+ </strong>，月新增用户 <strong>20w+</strong>，月新增供应商 <strong>1000+</strong>
                       </li>
                     </ul>
                     <div className='py-2' />
-                    <p>
-                      <strong>负责祥云内部管理系统的开发工作</strong>
-                    </p>
+                    <p>主要贡献：</p>
                     <ul className='list-disc pl-5 space-y-1'>
                       <li>
-                        使用 <strong>Next.js</strong> 进行开发
+                        <strong>工程化建设</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>开发 Vite/Webpack 通用插件，实现组件、图标、工具库自动导入，减少手动导入代码 40%</li>
+                          <li>搭建 Sentry + APM 监控体系，错误捕获率 98%，线上问题响应时间 ≤30min</li>
+                          <li>优化 CDN 图片存储方案（S3+CloudFront），月成本从 5.2 万降至 2.8 万</li>
+                        </ol>
                       </li>
+
                       <li>
-                        在 <strong>React-Admin</strong> 上进行二次封装
+                        <strong>架构升级 & 性能优化</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>重构官网至 Next.js，SSR 服务端渲染 + ISR 增量静态生成，首屏加载从 7.1s→1.2s，SEO 流量 +52%</li>
+                          <li>Bundle 优化：Tree-shaking + 动态导入，生产包减少67%；图片加载从 900ms→300ms</li>
+                          <li>Google 评分提升：Search Console 评分从 40→85+，TTFB 降低 58%</li>
+                        </ol>
                       </li>
-                      <li>解决复杂权限配置问题</li>
+
+                      <li>
+                        <strong>团队提效</strong>
+                        <ol className='list-decimal pl-5 space-y-1'>
+                          <li>开发 UI 组件库，覆盖 85% 业务场景，开发效率 +60%，设计还原度 95%</li>
+                          <li>制定设计 Token 规范，统一色彩/间距/动效，自动生成 TypeScript 类型，API 文档覆盖率 100%</li>
+                          <li>搭建技术文档中心，沉淀通用开发规范，建立团队 Git 工作流</li>
+                        </ol>
+                      </li>
                     </ul>
                   </div>
                 </div>
