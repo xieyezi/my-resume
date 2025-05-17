@@ -10,14 +10,14 @@ export function ResumeWork() {
           {/* First Job */}
           <div className='section-detail-item mt-3 border-b border-gray-200 pb-2 border-dashed dark:border-gray-700'>
             <div className='normal-content'>
-              <div className='grid md:grid-cols-5'>
-                <div className='md:col-span-1 left-time mt-0 mb-2 mr-0 md:mr-4'>
-                  <h4 className='md:text-left text-gray-400 flex justify-between md:block dark:opacity-80'>
+              <div className='flex flex-col'>
+                <div className='left-time mt-0 mb-2'>
+                  <h4 className='text-gray-400 flex justify-between md:block dark:opacity-80'>
                     <div>2024/01 - 至今</div>
                   </h4>
                 </div>
 
-                <div className='md:col-span-4'>
+                <div>
                   <header>
                     <h3 className='font-semibold mb-2 dark:text-white'>
                       <a href='https://www.pietrastudio.com' rel='noopener noreferrer' target='_blank'>
@@ -64,14 +64,14 @@ export function ResumeWork() {
           {/* Second Job */}
           <div className='section-detail-item mt-3 border-b border-gray-200 pb-2 border-dashed dark:border-gray-700'>
             <div className='normal-content'>
-              <div className='grid md:grid-cols-5'>
-                <div className='md:col-span-1 left-time mt-0 mb-2 mr-0 md:mr-4'>
-                  <h4 className='md:text-left text-gray-400 flex justify-between md:block dark:opacity-80'>
+              <div className='flex flex-col'>
+                <div className='left-time mt-0 mb-2'>
+                  <h4 className='text-gray-400 flex justify-between md:block dark:opacity-80'>
                     <div>2021/12 - 2024/01</div>
                   </h4>
                 </div>
 
-                <div className='md:col-span-4'>
+                <div>
                   <header>
                     <h3 className='font-semibold mb-2 dark:text-white'>
                       <a href='https://www.changan.com.cn' rel='noopener noreferrer' target='_blank'>
