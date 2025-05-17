@@ -7,8 +7,8 @@ import { ResumeEducation } from "@/components/resume-education";
 
 export default function Home() {
   return (
-    <main className='min-h-screen'>
-      <div className='bg-gray-50 dark:bg-neutral-900 min-h-screen'>
+    <main className='min-h-screen bg-white dark:bg-neutral-900'>
+      <div className='h-full'>
         <Header />
         <div className='resume-read-container'>
           <div className='fullheight-fix bg-white dark:bg-neutral-900'>

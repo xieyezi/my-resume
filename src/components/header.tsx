@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className='text-gray-600 mb-5'>
-      <div className='container mx-auto flex flex-wrap pt-5 px-12 flex-col md:flex-row items-center max-w-screen-lg justify-between'>
+      <div className='container mx-auto flex pt-5 px-12 flex-row items-center max-w-screen-lg justify-end'>
         <div className='function-container flex items-center'>
           <div className='relative' id='download-area'>
             <button className='inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base md:mt-0'>
