@@ -19,7 +19,7 @@ export function ResumeEducation() {
 
                 <div className='md:col-span-4'>
                   <header>
-                    <h3 className='font-semibold mb-2 dark:text-white'>学士</h3>
+                    <h3 className='font-semibold mb-2 dark:text-white'>本科</h3>
                     <div className='flex justify-between flex-wrap mb-2 text-gray-400 dark:opacity-80'>
                       <h4>
                         重庆理工大学 <span className='ml-2'>计算机科学与技术</span>

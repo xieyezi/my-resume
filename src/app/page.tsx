@@ -2,9 +2,8 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ResumeProfile } from "@/components/resume-profile";
 import { ResumeWork } from "@/components/resume-work";
-import { ResumeSkills } from "@/components/resume-skills";
 import { ResumeEducation } from "@/components/resume-education";
-
+import { ResumeAdvantage } from "@/components/resume-advantage";
 export default function Home() {
   return (
     <main className='min-h-screen bg-white dark:bg-neutral-900'>
@@ -16,8 +15,8 @@ export default function Home() {
               <main className='px-0 md:px-8 pt-8 bg-white text-gray-500 dark:bg-neutral-900 dark:text-gray-300'>
                 <ResumeProfile />
                 <div className='resume-content'>
+                  <ResumeAdvantage />
                   <ResumeWork />
-                  <ResumeSkills />
                   <ResumeEducation />
                 </div>
               </main>
