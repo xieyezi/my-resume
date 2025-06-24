@@ -35,12 +35,12 @@ export function ResumeProfile() {
               xieyezi-syc
             </a>
           </li>
-          <li className='mr-3 mb-2 flex items-center'>
+          {/* <li className='mr-3 mb-2 flex items-center'>
             <Globe className='w-4 h-4 mr-1 text-gray-500' />
             <a href='https://www.xieyezi.info/' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
               个人网站
             </a>
-          </li>
+          </li> */}
           <li className='mr-3 mb-2 flex items-center'>
             <Github className='w-4 h-4 mr-1 text-gray-500' />
             <a href='https://github.com/xieyezi' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
