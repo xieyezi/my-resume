@@ -102,7 +102,7 @@ export function ResumeWork() {
                             开发工作
                           </li>
                           <li>升级老项目的前端架构至新架构以及解决历史遗留问题</li>
-                          <li>开发Incall CLI, 更新团队开发范式, 提高团队开发效率</li>
+                          <li>开发 Incall CLI, 更新团队开发范式, 提高团队开发效率</li>
                           <li>负责前端开发的技术面试和 Code Review</li>
                         </ol>
                       </li>
