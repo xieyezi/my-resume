@@ -10,7 +10,7 @@ export function ResumeProfile() {
       </div>
 
       <div className='header-info md:text-left text-center mt-2 md:mt-0'>
-        <h1 className='text-xl mb-2 text-gray-800 dark:text-white font-semibold'>苏业纯</h1>
+        <h1 className='text-xl mb-2 text-gray-800 dark:text-white font-semibold'>苏业纯 (xieyezi)</h1>
         <h2 className='mb-2 text-gray-600 dark:text-gray-300'>高级前端工程师/架构师 | 7年工作经验 | 男 | 29岁 | 重庆</h2>
 
         <ul className='link-list text-left flex md:items-center flex-wrap'>
@@ -26,12 +26,7 @@ export function ResumeProfile() {
           </li>
           <li className='mr-3 mb-2 flex items-center'>
             <MessageCircleMore className='w-4 h-4 mr-1 text-gray-500' />
-            <a
-              href='https://www.helloimg.com/i/2025/04/03/67ee9eb6239ba.png'
-              target='_blank'
-              className='text-gray-600 dark:text-gray-300 hover:text-gray-800'
-              rel='noreferrer'
-            >
+            <a href='https://www.helloimg.com/i/2025/04/03/67ee9eb6239ba.png' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
               xieyezi-syc
             </a>
           </li>
