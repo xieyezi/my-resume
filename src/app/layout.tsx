@@ -55,15 +55,6 @@ export const metadata: Metadata = {
     title: "苏业纯 (xieyezi) - 前端工程师 | 个人简历",
     description: "苏业纯 (xieyezi) 的个人简历，专注于前端开发，拥有丰富的前端技术栈经验。",
     images: ["/img/white.png"]
-  },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" }
-  ],
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico"
   }
 };
 
@@ -71,7 +62,11 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false
+  userScalable: false,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" }
+  ]
 };
 
 export default function RootLayout({
