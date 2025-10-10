@@ -12,7 +12,7 @@ export function ResumeAdvantage() {
             <li>GitHub 累计 Stars 数达1.6k+</li>
             <li>熟练掌握各类前端框架(Vue, React)</li>
             <li>熟练掌握 JavaScript, TypeScript, ES6</li>
-            <li>多个大型开源项目贡献者(Vue, Semi-Design等)</li>
+            <li>多个大型开源项目贡献者(Vant, Semi-Design, Vue等)</li>
             <li>担任过前端架构师、前端技术Leader，主导团队技术架构和性能优化，自研团队前端脚手架。</li>
           </ul>
         </div>
