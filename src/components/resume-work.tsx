@@ -33,7 +33,7 @@ export function ResumeWork() {
                         <ol className='list-decimal pl-5 space-y-1'>
                           <li>开发 Pietra Creator Admin, Pietra Landing Page(官网)</li>
                           <li>开发 Pietra AI Copilot, Sourcing AI Agent等AI工具</li>
-                          <li>开发团队内技术插件、工具(如pietra devtool), 提高团队DX</li>
+                          <li>开发团队内技术插件、工具(如Pietra Devtool), 提高团队DX</li>
                         </ol>
                       </li>
 
