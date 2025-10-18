@@ -98,3 +98,7 @@
   background-color: rgb(25 30 40 / var(--tw-bg-opacity));
   border-color: rgb(25 30 40 / var(--tw-border-opacity));
 }
+
+:root {
+  text-autospace: normal;
+}
