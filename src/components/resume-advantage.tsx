@@ -14,7 +14,7 @@ export function ResumeAdvantage() {
         </header>
 
         <div className='content-section-container border-b border-gray-200 pb-4 border-dashed dark:border-gray-700'>
-          <ul className='list-disc list-inside'>
+          <ul className='list-disc list-inside space-y-1'>
             {tAdv.raw('items').map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
