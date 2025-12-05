@@ -3,16 +3,19 @@
 import Image from "next/image";
 import { Mail, Phone, Github, MessageCircleMore, Twitter, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Profile from "@/static/avator.png";
+// import Profile from "@/static/avatar.png";
+import Profile from "@/static/avatar2.jpg";
 
 export function ResumeProfile() {
   const t = useTranslations("profile");
 
   return (
     <header className='resume-header md:flex md:items-center md:justify-between md:flex-row-reverse mb-4'>
-      <a href='https://www.xieyezi.info/' target='_self' className='relative w-28 h-28 rounded-full overflow-hidden mx-auto md:mx-0'>
-        <Image src={Profile} alt='Profile' fill className='object-cover' />
-      </a>
+      <div className='flex justify-center md:justify-end md:flex-1'>
+        <a href='https://www.xieyezi.info/' target='_self' className='relative w-28 h-28 rounded-full overflow-hidden block'>
+          <Image src={Profile} alt='Profile' fill className='object-cover' />
+        </a>
+      </div>
 
       <div className='header-info md:text-left text-center mt-2 md:mt-0'>
         <h1 className='text-xl mb-2 text-gray-800 dark:text-white font-semibold'>{t("name")}</h1>
