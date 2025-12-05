@@ -10,9 +10,9 @@ export function ResumeProfile() {
 
   return (
     <header className='resume-header md:flex md:items-center md:justify-between md:flex-row-reverse mb-4'>
-      <div className='relative w-28 h-28 rounded-full overflow-hidden mx-auto md:mx-0'>
+      <a href='https://www.xieyezi.info/' target='_self' className='relative w-28 h-28 rounded-full overflow-hidden mx-auto md:mx-0'>
         <Image src={Profile} alt='Profile' fill className='object-cover' />
-      </div>
+      </a>
 
       <div className='header-info md:text-left text-center mt-2 md:mt-0'>
         <h1 className='text-xl mb-2 text-gray-800 dark:text-white font-semibold'>{t("name")}</h1>
