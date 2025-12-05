@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, Phone, Globe, Github, MessageCircleMore } from "lucide-react";
+import { Mail, Phone, Github, MessageCircleMore, Twitter, Send } from "lucide-react";
 import Profile from "@/static/avator.png";
 
 export function ResumeProfile() {
@@ -15,14 +15,22 @@ export function ResumeProfile() {
 
         <ul className='link-list text-left flex md:items-center flex-wrap'>
           <li className='mr-3 mb-2 flex items-center'>
-            <Mail className='w-4 h-4 mr-1 text-gray-500' />
-            <a href='mailto:1435398529@qq.com' className='text-gray-600 dark:text-gray-300 hover:text-gray-800'>
-              1435398529@qq.com
+            <Github className='w-4 h-4 mr-1 text-gray-500' />
+            <a href='https://github.com/xieyezi' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
+              Github
             </a>
           </li>
           <li className='mr-3 mb-2 flex items-center'>
-            <Phone className='w-4 h-4 mr-1 text-gray-500' />
-            <span className='text-gray-600 dark:text-gray-300'>17783887443</span>
+            <Twitter className='w-4 h-4 mr-1 text-gray-500' />
+            <a href='https://x.com/xieyezi666' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
+              Twitter
+            </a>
+          </li>
+          <li className='mr-3 mb-2 flex items-center'>
+            <Send className='w-4 h-4 mr-1 text-gray-500' />
+            <a href='https://t.me/xieyezi666' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
+              Telegram
+            </a>
           </li>
           <li className='mr-3 mb-2 flex items-center'>
             <MessageCircleMore className='w-4 h-4 mr-1 text-gray-500' />
@@ -31,17 +39,21 @@ export function ResumeProfile() {
             </a>
           </li>
           {/* <li className='mr-3 mb-2 flex items-center'>
+            <Phone className='w-4 h-4 mr-1 text-gray-500' />
+            <span className='text-gray-600 dark:text-gray-300'>17783887443</span>
+          </li> */}
+          <li className='mr-3 mb-2 flex items-center'>
+            <Mail className='w-4 h-4 mr-1 text-gray-500' />
+            <a href='mailto:1435398529@qq.com' className='text-gray-600 dark:text-gray-300 hover:text-gray-800'>
+              1435398529@qq.com
+            </a>
+          </li>
+          {/* <li className='mr-3 mb-2 flex items-center'>
             <Globe className='w-4 h-4 mr-1 text-gray-500' />
             <a href='https://www.xieyezi.info/' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
               个人网站
             </a>
           </li> */}
-          <li className='mr-3 mb-2 flex items-center'>
-            <Github className='w-4 h-4 mr-1 text-gray-500' />
-            <a href='https://github.com/xieyezi' target='_blank' className='text-gray-600 dark:text-gray-300 hover:text-gray-800' rel='noreferrer'>
-              Github
-            </a>
-          </li>
         </ul>
       </div>
     </header>
