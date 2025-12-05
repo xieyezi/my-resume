@@ -33,16 +33,16 @@ export function ResumeWork() {
                         <ol className='list-decimal pl-5 space-y-1'>
                           <li>开发 Pietra Creator Admin, Pietra Landing Page(官网)</li>
                           <li>开发 Pietra AI Copilot, Sourcing AI Agent等AI工具</li>
-                          <li>开发团队内技术插件、工具(如Pietra Devtool), 提高团队DX</li>
+                          <li>开发团队内技术插件、工具(如<strong>Pietra Devtool</strong>), 提高团队DX</li>
                         </ol>
                       </li>
 
                       <li>
                         <strong>工程化建设</strong>
                         <ol className='list-decimal pl-5 space-y-1'>
-                          <li>
+                          {/* <li>
                             优化 CDN 图片存储方案 (AWS CloudFront + S3), <strong>较原来月节省90%图片支出费用</strong>
-                          </li>
+                          </li> */}
                           <li>
                             开发 <code>@pietra-auto-tracker</code> 插件, 实现页面无痕埋点，提高数据采集效率
                           </li>

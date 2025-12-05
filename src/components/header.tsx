@@ -1,6 +1,6 @@
 "use client";
 
-import { Sun, Moon, Download, Share2 } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 import { useState } from "react";
 
 export function Header() {
