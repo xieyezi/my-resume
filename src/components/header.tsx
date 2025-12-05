@@ -1,10 +1,24 @@
 "use client";
 
-import { Sun, Moon } from "lucide-react";
-import { useState } from "react";
+import { Sun, Moon, Globe } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useLocale } from 'next-intl';
+import { usePathname, useRouter } from 'next/navigation';
 
 export function Header() {
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
   const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    // 检查系统主题偏好
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -15,25 +29,33 @@ export function Header() {
     }
   };
 
+  const switchLocale = (newLocale: string) => {
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+    router.push(newPath);
+  };
+
   return (
     <header className='text-gray-600 mb-5'>
       <div className='container mx-auto flex pt-5 px-12 flex-row items-center max-w-screen-lg justify-end'>
-        <div className='function-container flex items-center'>
-          {/*<div className='relative' id='download-area'>
-            <button className='inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base md:mt-0'>
-              <Download className='h-4 w-4 mr-1' />
-              下载
-            </button>
+        <div className='function-container flex items-center gap-3'>
+          <div className='relative flex items-center'>
+            <Globe className='h-4 w-4 mr-1 text-gray-500' />
+            <select 
+              value={locale} 
+              onChange={(e) => switchLocale(e.target.value)}
+              className='px-2 py-1 border border-gray-300 dark:border-gray-600 rounded text-sm bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-500'
+            >
+              <option value="zh-CN">中文</option>
+              <option value="en-US">English</option>
+            </select>
           </div>
 
-          <div className='relative ml-3' id='share-area'>
-            <button className='inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base md:mt-0'>
-              <Share2 className='h-4 w-4 mr-1' />
-              分享
-            </button>
-          </div>*/}
-
-          <button type='button' className='ml-3' onClick={toggleTheme}>
+          <button 
+            type='button' 
+            className='p-1 hover:bg-gray-100 dark:hover:bg-neutral-800 rounded transition-colors' 
+            onClick={toggleTheme}
+            aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+          >
             {theme === "light" ? <Sun className='h-5 w-5' /> : <Moon className='h-5 w-5' />}
           </button>
         </div>

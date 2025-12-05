@@ -1,0 +1,104 @@
+{
+  "profile": {
+    "name": "Su Yechun (xieyezi)",
+    "title": "Senior Frontend Engineer/Architect | 7 Years Experience | Male | 29 Years Old | Chongqing",
+    "github": "Github",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "wechat": "xieyezi-syc",
+    "email": "1435398529@qq.com"
+  },
+  "sections": {
+    "workExperience": "Work Experience",
+    "skills": "Professional Skills",
+    "education": "Education",
+    "advantages": "Advantages"
+  },
+  "work": {
+    "parsec": {
+      "company": "Parsec Technology Co., Ltd. (Senior Frontend Engineer | Remote)",
+      "period": "2024/01 - 2025/10",
+      "responsibilities": "Responsibilities",
+      "responsibilitiesItems": ["Developed Pietra Creator Admin, Pietra Landing Page (Official Website)", "Developed Pietra AI Copilot, Sourcing AI Agent and other AI tools", "Developed internal technical plugins and tools (such as <strong>Pietra Devtool</strong>) to improve team DX"],
+      "engineering": "Engineering",
+      "engineeringItems": [
+        "Developed <code>@pietra-auto-tracker</code> plugin for seamless page tracking, improving data collection efficiency",
+        "Developed <code>@pietra/auto-import</code> plugin for automatic import of components, icons, and utility libraries, reducing manual import code",
+        "Built frontend monitoring system using <code>@elastic/apm-rum</code>, improving error capture rate and reducing online issue response time"
+      ],
+      "architecture": "Architecture Upgrade & Performance Optimization",
+      "architectureItems": [
+        "Refactored official website to Next.js with SSR server-side rendering + ISR incremental static generation, reducing first screen load time and improving SEO traffic",
+        "Bundle optimization: Tree-shaking + dynamic imports, production bundle reduced by 67% compared to original",
+        "Google score improvement: Optimized LCP, FCP, CLS metrics, Search Console score improved from 40→90+"
+      ]
+    },
+    "changan": {
+      "company": "Changan Automobile (Frontend Architect | Chongqing)",
+      "period": "2021/12 - 2024/01",
+      "responsibilities": "Responsibilities",
+      "responsibilitiesItems": [
+        "Micro-application frontend framework development",
+        "SDK API development for various automotive product lines within the company (<a class='hover:text-gray-600 underline' href='http://tspdemo.changan.com.cn/incall-js-api/' rel='noopener noreferrer' target='_blank'>SDK API</a>)",
+        "Upgraded legacy project frontend architecture to new architecture and resolved historical issues",
+        "Developed Incall CLI, updated team development paradigm, improved team development efficiency",
+        "Responsible for frontend development technical interviews and Code Review"
+      ],
+      "architecture": "Architecture Upgrade & Performance Optimization",
+      "architectureItems": [
+        "Comprehensively upgraded project architecture to monorepo (achieving componentized on-demand loading of business components)",
+        "Upgraded vehicle control SDK to <strong>micro-application framework</strong>, supporting remote self-update and seamless upgrade of micro-applications, integrated into multiple host APPs such as Changan Automobile, UNI, Kaicheng, etc. (greatly reducing main package size)",
+        "Comprehensively upgraded team technology stack, Webpack5/Vite + Vue2.7/Vue3, developed a series of engineering plugins (such as VSCode, ESLint, Prettier plugins, etc.), greatly improving team DX",
+        "Performed extremely detailed performance optimization on projects, such as refactoring Webpack configuration items according to functional programming, custom Webpack Loader, and optimizing entry volume with CDN"
+      ],
+      "teamBuilding": "Team Building",
+      "teamBuildingItems": [
+        "Built team technical specification documentation center, unified team development standards",
+        "Organized internal technical sharing to improve team technical level",
+        "<a class='hover:text-gray-600 underline' href='https://mp.weixin.qq.com/s/5YlTookMLJHmFApVxjiKFA' rel='noopener noreferrer' target='_blank'>Represented the company at technical exchange meetings, sharing technical experience</a>"
+      ]
+    }
+  },
+  "skills": {
+    "javascript": {
+      "title": "Frontend development using Javascript (ES6) / TypeScript, proficient in the following frameworks",
+      "items": ["React frameworks: Next.js / Astro", "React state management: Zustand / Jotai / Redux", "React component libraries: Radix UI / Ant Design", "React common libraries: React Query / Formik", "React testing: React Testing Library"]
+    },
+    "css": {
+      "title": "Proficient in CSS3 and related tools",
+      "items": ["Style libraries: Tailwind.css", "Solutions: CSS Module / Styled Components / Emotion", "Preprocessors: Sass / PostCSS"]
+    },
+    "build": {
+      "title": "Master common frontend engineering and build tools",
+      "items": ["Experience using Webpack / Vite for web application bundling and corresponding frontend performance optimization.", "Master the process of using Rollup for component library bundling and publishing.", "Prettier / ESLint for managing coding style standards."]
+    },
+    "git": {
+      "title": "Proficient in Git for version control and code hosting, familiar with Git flow"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "degree": "2015/09-2019/06 | Bachelor's Degree | Outstanding Graduate",
+    "school": "Chongqing University of Technology",
+    "major": "Computer Science and Technology"
+  },
+  "advantages": {
+    "title": "Advantages",
+    "items": [
+      "Outstanding author on Juejin platform",
+      "GitHub accumulated Stars reached 1.6k+",
+      "Proficient in JavaScript, TypeScript, ES6",
+      "Contributor to multiple large open source projects (Vant, Semi-Design, Vue, etc.)",
+      "Proficient in various frontend frameworks (React, Nextjs, TanStack Start, Vue, etc.)",
+      "Served as frontend architect and frontend technical leader, leading team technical architecture and performance optimization, self-developed team frontend scaffolding"
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025"
+  },
+  "metadata": {
+    "title": "Su Yechun (xieyezi) - Frontend Engineer | Resume",
+    "description": "Resume of Su Yechun (xieyezi), focusing on frontend development with rich experience in frontend technology stack including React, Next.js, TypeScript and other modern frontend technologies.",
+    "keywords": "Su Yechun,xieyezi,Frontend Engineer,React,Next.js,Vue,ES6,Node.js,TypeScript,Resume,Frontend Development"
+  }
+}
