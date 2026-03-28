@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Su Yechun (xieyezi)",
-    "title": "Senior Frontend Engineer/Architect | 7 Years Experience | Male | 30 Years Old | Chongqing",
+    "title": "Senior Frontend Engineer | 7 years of experience | Male | 30 years old | Chongqing",
     "github": "Github",
     "twitter": "Twitter",
     "telegram": "Telegram",
@@ -10,97 +10,126 @@
   },
   "sections": {
     "workExperience": "Work Experience",
-    "skills": "Professional Skills",
+    "skills": "Technical Skills",
     "education": "Education",
-    "advantages": "Advantages"
+    "advantages": "Personal Strengths"
   },
   "work": {
     "parsec": {
       "company": "Parsec Technology Co., Ltd. (Senior Frontend Engineer | Remote)",
       "period": "2024/01 - 2025/10",
       "responsibilities": "Responsibilities",
-      "responsibilitiesItems": ["Developed Pietra Creator Admin, Pietra Landing Page (Official Website)", "Developed Pietra AI Copilot, Sourcing AI Agent and other AI tools", "Developed internal technical plugins and tools (such as <strong>Pietra Devtool</strong>) to improve team DX"],
-      "engineering": "Engineering",
-      "engineeringItems": [
-        "Developed <code>@pietra-auto-tracker</code> plugin for seamless page tracking, improving data collection efficiency",
-        "Developed <code>@pietra/auto-import</code> plugin for automatic import of components, icons, and utility libraries, reducing manual import code",
-        "Built frontend monitoring system using <code>@elastic/apm-rum</code>, improving error capture rate and reducing online issue response time"
+      "responsibilitiesItems": [
+        "Developed Pietra Creator Admin and Pietra Landing Page (official website)",
+        "Developed AI tools such as Pietra AI Copilot and Sourcing AI Agent",
+        "Built internal engineering plugins and tools (e.g. <strong>Pietra Devtool</strong>) to improve team developer experience (DX)"
       ],
-      "engineeringItemImages": ["", "", ""],
-      "architecture": "Architecture Upgrade & Performance Optimization",
+      "engineering": "Key Engineering Achievements",
+      "engineeringItems": [
+        "Built the <strong>@pietra/auto-import</strong> plugin based on AST and Vite, enabling automatic imports of components (including internal and third-party components), icons, and utility libraries (e.g. Lodash), eliminating the need for manual imports and significantly improving developer productivity",
+        "Due to complex business logic and heavy data collection requirements, manual tracking implementation introduced high code intrusion. To solve this, developed the <strong>@pietra-auto-tracker</strong> plugin using AST, enabling zero-intrusion automatic tracking during build time, significantly improving data collection efficiency and reducing business code coupling",
+        "Developed <strong>Pietra Devtool</strong>, which runs as an independent DevTool frontend process in development mode. It communicates with the Vite dev server via RPC and centralizes project metadata, build graphs, and resources into a single dashboard, solving the issue of fragmented debugging information such as module dependencies, static assets (images, CSS variables, custom components, hooks, etc.), and build processes"
+      ],
+      "engineeringItemImages": ["", "", "/images/work/pietra-devtool.png"],
+      "architecture": "Architecture Upgrades & Performance Optimization",
       "architectureItems": [
-        "Refactored official website to Next.js with SSR server-side rendering + ISR incremental static generation, reducing first screen load time and improving SEO traffic",
-        "Bundle optimization: Tree-shaking + dynamic imports, production bundle reduced by 67% compared to original",
-        "Google score improvement: Optimized LCP, FCP, CLS metrics, Search Console score improved from 40→90+"
+        "Refactored the official website to Next.js, implementing SSR (Server-Side Rendering) and ISR (Incremental Static Regeneration), reducing first-page load time and improving SEO traffic",
+        "Bundle optimization using tree-shaking and dynamic imports, reducing production bundle size by 67%",
+        "Improved Google Lighthouse scores by optimizing LCP, FCP, and CLS metrics; Search Console score increased from 40 to 90+"
       ]
     },
     "changan": {
-      "company": "Changan Automobile (Frontend Architect | Chongqing)",
+      "company": "Changan Automobile (Frontend Engineer | Chongqing)",
       "period": "2021/12 - 2024/01",
       "responsibilities": "Responsibilities",
       "responsibilitiesItems": [
-        "Micro-application frontend framework development",
-        "SDK API development for various automotive product lines within the company (<a class='hover:text-gray-600 underline' href='http://tspdemo.changan.com.cn/incall-js-api/' rel='noopener noreferrer' target='_blank'>SDK API</a>)",
-        "Upgraded legacy project frontend architecture to new architecture and resolved historical issues",
-        "Developed Incall CLI, updated team development paradigm, improved team development efficiency",
-        "Responsible for frontend development technical interviews and Code Review"
+        "Development of micro-frontend application frameworks",
+        "Development of SDK APIs for various automotive product lines, including <a class='hover:text-gray-600 underline' href='http://tspdemo.changan.com.cn/incall-js-api/' rel='noopener noreferrer' target='_blank'>SDK API</a>",
+        "Upgraded legacy frontend architecture to a new architecture and resolved historical technical debt",
+        "Developed Incall CLI to improve team development workflow and productivity",
+        "Conducted frontend technical interviews and code reviews"
       ],
-      "architecture": "Architecture Upgrade & Performance Optimization",
+      "architecture": "Key Engineering Achievements",
       "architectureItems": [
-        "Comprehensively upgraded project architecture to monorepo (achieving componentized on-demand loading of business components)",
-        "Upgraded vehicle control SDK to <strong>micro-application framework</strong>, supporting remote self-update and seamless upgrade of micro-applications, integrated into multiple host APPs such as Changan Automobile, UNI, Kaicheng, etc. (greatly reducing main package size)",
-        "Comprehensively upgraded team technology stack, Webpack5/Vite + Vue2.7/Vue3, developed a series of engineering plugins (such as VSCode, ESLint, Prettier plugins, etc.), greatly improving team DX",
-        "Performed extremely detailed performance optimization on projects, such as refactoring Webpack configuration items according to functional programming, custom Webpack Loader, and optimizing entry volume with CDN"
+        "Upgraded project architecture to a Monorepo structure, consolidating distributed codebases into a unified and standardized management system. Introduced component-based design to decouple business logic and extract reusable base and business component libraries, while implementing on-demand loading based on routes and modules, significantly reducing initial bundle size and improving application performance and user experience",
+        "Led the refactoring of the vehicle control SDK into a micro-frontend architecture, splitting tightly coupled features into independent micro-applications supporting independent development, deployment, and on-demand loading. Designed core architecture including micro-app lifecycle, host communication mechanisms, and dynamic loading strategies. Built remote update capabilities enabling OTA-like delivery, canary releases, and seamless upgrades without app store redeployment. This solution has been deployed across multiple host apps (Changan Auto, Deepal, Kaicene, etc.), effectively reducing bundle size and improving iteration efficiency",
+        "Led technology stack upgrades from Webpack 4 to Webpack 5/Vite, and migration from Vue2 to Vue2.7/Vue3. Established unified development standards and build systems. Developed engineering tools such as VSCode plugins and ESLint/Prettier configurations, achieving automated code standards and standardized development workflows, significantly improving DX including build speed, development efficiency, and code consistency while reducing onboarding time for new engineers",
+        "Performed fine-grained performance optimization from build system to resource loading layer. Refactored complex Webpack configurations into modular and function-based structures for better maintainability and scalability. Developed custom Webpack loaders for business-specific compilation optimization. Integrated CDN-based static asset delivery and optimized entry dependency structure, reducing initial bundle size and improving overall loading performance"
       ],
       "teamBuilding": "Team Building",
       "teamBuildingItems": [
-        "Built team technical specification documentation center, unified team development standards",
-        "Organized internal technical sharing to improve team technical level",
-        "<a class='hover:text-gray-600 underline' href='https://mp.weixin.qq.com/s/5YlTookMLJHmFApVxjiKFA' rel='noopener noreferrer' target='_blank'>Represented the company at technical exchange meetings, sharing technical experience</a>"
+        "Established a centralized technical documentation system to standardize development practices",
+        "Organized internal technical sharing sessions to improve overall team capability",
+        "<a class='hover:text-gray-600 underline' href='https://mp.weixin.qq.com/s/5YlTookMLJHmFApVxjiKFA' rel='noopener noreferrer' target='_blank'>Represented the company at technical conferences and shared engineering experience</a>"
       ]
     }
   },
   "skills": {
     "javascript": {
-      "title": "Frontend development using Javascript (ES6) / TypeScript, proficient in the following frameworks",
-      "items": ["React frameworks: Next.js / Astro", "React state management: Zustand / Jotai / Redux", "React component libraries: Radix UI / Ant Design", "React common libraries: React Query / Formik", "React testing: React Testing Library"]
+      "title": "Proficient in frontend development using JavaScript (ES6) / TypeScript, with strong experience in the following frameworks",
+      "items": [
+        "React frameworks: Next.js / Astro",
+        "React state management: Zustand / Jotai / Redux",
+        "React component libraries: Radix UI / Ant Design",
+        "React utilities: React Query / Formik",
+        "React testing: React Testing Library"
+      ]
     },
     "css": {
       "title": "Proficient in CSS3 and related tools",
-      "items": ["Style libraries: Tailwind.css", "Solutions: CSS Module / Styled Components / Emotion", "Preprocessors: Sass / PostCSS"]
+      "items": [
+        "Styling frameworks: Tailwind CSS",
+        "Solutions: CSS Modules / Styled Components / Emotion",
+        "Preprocessors: Sass / PostCSS"
+      ]
     },
     "build": {
-      "title": "Master common frontend engineering and build tools",
-      "items": ["Experience using Webpack / Vite for web application bundling and corresponding frontend performance optimization.", "Master the process of using Rollup for component library bundling and publishing.", "Prettier / ESLint for managing coding style standards."]
+      "title": "Strong understanding of frontend engineering and build tools",
+      "items": [
+        "Experienced in using Webpack / Vite for web application bundling and performance optimization",
+        "Proficient in using Rollup for component library packaging and publishing",
+        "Familiar with code quality tools such as Prettier and ESLint"
+      ]
     },
     "git": {
-      "title": "Proficient in Git for version control and code hosting, familiar with Git flow"
+      "title": "Proficient in Git for version control and code management, familiar with Git flow"
     }
   },
   "education": {
     "title": "Education",
-    "degree": "2015/09-2019/06 | Bachelor's Degree | Outstanding Graduate",
+    "degree": "2015/09 - 2019/06 | Bachelor's Degree | Outstanding Graduate",
     "school": "Chongqing University of Technology",
     "major": "Computer Science and Technology"
   },
   "advantages": {
-    "title": "Advantages",
+    "title": "Personal Strengths",
     "items": [
-      "Outstanding author on Juejin platform",
-      "GitHub accumulated Stars reached 1.6k+",
-      "Proficient in JavaScript, TypeScript, ES6",
-      "Contributor to multiple large open source projects (Vant, Semi-Design, Vue, etc.)",
-      "Proficient in various frontend frameworks (React, Nextjs, TanStack Start, Vue, etc.)",
-      "Served as frontend architect and frontend technical leader, leading team technical architecture and performance optimization, self-developed team frontend scaffolding"
+      "Featured author on Juejin (technical blogging platform)",
+      "1.6k+ GitHub stars across repositories",
+      "Strong proficiency in JavaScript, TypeScript, ES6",
+      "Contributor to multiple open-source projects (Vant, Semi-Design, Vue, etc.)",
+      "Extensive experience in frontend frameworks (React, Next.js, Vue), compiler systems, and performance optimization",
+      "Former frontend architect leading team architecture design and performance optimization, built in-house scaffolding tools",
+      "Invited speaker at the 2022 Chongqing Frontend Technology Conference",
+      "Holder of two invention patents (CN115269034A and CN115686570A)"
     ],
-    "itemImages": ["", "", "", "", "", ""]
+    "itemImages": [
+      "https://picui.ogmua.cn/s1/2026/03/28/69c774a909529.webp",
+      "https://picui.ogmua.cn/s1/2026/03/28/69c7751044325.webp",
+      "",
+      "",
+      "",
+      "",
+      "https://picui.ogmua.cn/s1/2026/03/28/69c7751d5373b.webp",
+      "https://picui.ogmua.cn/s1/2026/03/28/69c775290f51a.webp"
+    ]
   },
   "footer": {
     "copyright": "© 2026"
   },
   "metadata": {
     "title": "Su Yechun (xieyezi) - Frontend Engineer | Resume",
-    "description": "Resume of Su Yechun (xieyezi), focusing on frontend development with rich experience in frontend technology stack including React, Next.js, TypeScript and other modern frontend technologies.",
-    "keywords": "Su Yechun,xieyezi,Frontend Engineer,React,Next.js,Vue,ES6,Node.js,TypeScript,Resume,Frontend Development"
+    "description": "Resume of Su Yechun (xieyezi), a frontend engineer specializing in modern frontend technologies including React, Next.js, TypeScript, and more.",
+    "keywords": "Su Yechun,xieyezi,Frontend Engineer,React,Next.js,Vue,ES6,Node.js,TypeScript,resume,frontend development"
   }
 }
