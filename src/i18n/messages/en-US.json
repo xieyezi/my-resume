@@ -26,6 +26,7 @@
         "Developed <code>@pietra/auto-import</code> plugin for automatic import of components, icons, and utility libraries, reducing manual import code",
         "Built frontend monitoring system using <code>@elastic/apm-rum</code>, improving error capture rate and reducing online issue response time"
       ],
+      "engineeringItemImages": ["", "", ""],
       "architecture": "Architecture Upgrade & Performance Optimization",
       "architectureItems": [
         "Refactored official website to Next.js with SSR server-side rendering + ISR incremental static generation, reducing first screen load time and improving SEO traffic",

@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "苏业纯 (xieyezi)",
-    "title": "高级前端工程师/架构师 | 7年工作经验 | 男 | 30岁 | 重庆",
+    "title": "高级前端工程师 | 7年工作经验 | 男 | 30岁 | 重庆",
     "github": "Github",
     "twitter": "Twitter",
     "telegram": "Telegram",
@@ -20,13 +20,18 @@
       "period": "2024/01 - 2025/10",
       "responsibilities": "负责工作",
       "responsibilitiesItems": ["开发 Pietra Creator Admin, Pietra Landing Page(官网)", "开发 Pietra AI Copilot, Sourcing AI Agent等AI工具", "开发团队内技术插件、工具(如<strong>Pietra Devtool</strong>), 提高团队DX"],
-      "engineering": "工程化建设",
-      "engineeringItems": ["开发 <code>@pietra-auto-tracker</code> 插件, 实现页面无痕埋点，提高数据采集效率", "开发 <code>@pietra/auto-import</code> 插件，实现组件、图标、工具库自动导入，减少手动导入代码", "利用 <code>@elastic/apm-rum</code> 搭建前端监控体系，提高错误捕获率 ，缩短线上问题响应时间"],
+      "engineering": "亮点工作",
+      "engineeringItems": [
+        "基于 AST 和 Vite 开发 <strong>@pietra/auto-import</strong> 插件，实现组件(包括自有组件和第三方组件)、图标、工具库（如Lodash等）自动导入，无需在顶部手动导入，从而减少手动导入代码，提高团队开发效率",
+        "公司项目业务复杂，数据采集工作繁重，需要手动埋点且埋点代码对业务代码侵入性强，基于此问题场景，使用 AST 开发了<strong>@pietra-auto-tracker</strong> 插件, 实现了页面无痕埋点，在编译代码时进行自动埋点操作，极大减少了埋点代码对于业务代码的侵入性，同时提高了数据采集的效率",
+        "基于公司的业务和代码背景，开发了<strong>Pietra Devtool</strong>工具，它可以在开发模式下挂一个独立的 DevTool 前端进程（单独开一个调试窗口），通过 RPC 和 Vite 开发服务器通信，把项目信息 + 构建图 + 资源等能力集中到一个面板里，解决了开发时，模块依赖、静态资源（例如图片、CSS变量、自定义组件、Hooks等）、构建过程等信息分散，排查成本高的问题"
+      ],
+      "engineeringItemImages": ["", "", "/images/work/pietra-devtool.png"],
       "architecture": "架构升级 & 性能优化",
       "architectureItems": ["重构官网至 Next.js, SSR 服务端渲染 + ISR 增量静态生成，缩短首屏加载时间，提升 SEO 流量", "Bundle 优化: Tree-shaking + 动态导入, 生产包较原来减少67%", "Google 评分提升: 优化LCP, FCP, CLS指标, Search Console 评分从 40→90+"]
     },
     "changan": {
-      "company": "长安汽车 (前端架构师 | 重庆)",
+      "company": "长安汽车 (前端工程师 | 重庆)",
       "period": "2021/12 - 2024/01",
       "responsibilities": "负责工作",
       "responsibilitiesItems": [
@@ -77,8 +82,10 @@
       "GitHub 累计 Stars 数达1.6k+",
       "熟练掌握 JavaScript, TypeScript, ES6",
       "多个大型开源项目贡献者 (Vant, Semi-Design, Vue等)",
-      "熟练掌握各类前端框架 (React, Nextjs,TanStack Start, Vue等)",
-      "担任过前端架构师、前端技术Leader, 主导团队技术架构和性能优化, 自研团队前端脚手架"
+      "对前端框架 (React, Nextjs, Vue等)开发、编译、性能优化经验丰富",
+      "担任过前端架构师, 主导团队技术架构和性能优化, 自研团队前端脚手架",
+      "受邀参加过2022年重庆前端技术分享交流会，作为嘉宾进行技术分享",
+      "拥有两篇技术发明专利, 并成功申请国家发明专利（公开号：CN115269034A 和 CN115686570A）"
     ]
   },
   "footer": {

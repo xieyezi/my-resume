@@ -7,7 +7,7 @@ import { ResumeAdvantage } from "@/components/resume-advantage";
 
 export default function Home() {
   return (
-    <main className='min-h-screen bg-white dark:bg-neutral-900'>
+    <main className='min-h-screen overflow-x-hidden bg-white dark:bg-neutral-900'>
       <div className='h-full'>
         <Header />
         <div className='resume-read-container'>
