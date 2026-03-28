@@ -1,34 +1,7 @@
 "use client";
 
+import { HoverPreviewListItem } from "@/components/hover-preview-list-item";
 import { useTranslations } from "next-intl";
-
-function WorkDetailListItem({ html, hoverImageSrc }: { html: string; hoverImageSrc?: string | null }) {
-  const src = hoverImageSrc?.trim();
-  if (!src) {
-    return <li dangerouslySetInnerHTML={{ __html: html }} />;
-  }
-
-  return (
-    <li className='group relative min-w-0 cursor-pointer'>
-      <span
-        className='transition-colors duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100 [&_a]:transition-colors [&_a]:group-hover:text-gray-800 dark:[&_a]:group-hover:text-gray-200'
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-      <div
-        className='pointer-events-none invisible absolute left-0 top-full z-50 mt-2 box-border w-max max-w-[min(32rem,100%)] opacity-0 transition-opacity duration-200 group-hover:visible group-hover:opacity-100 md:max-w-[min(40rem,calc(100vw-2rem))]'
-        aria-hidden
-      >
-        <div className='rounded-lg border border-gray-200 bg-white p-1.5 shadow-lg dark:border-gray-600 dark:bg-gray-900'>
-          <img
-            src={src}
-            alt=''
-            className='max-h-[min(55vh,22rem)] w-full max-w-full rounded-md object-contain md:max-h-[min(65vh,28rem)]'
-          />
-        </div>
-      </div>
-    </li>
-  );
-}
 
 export function ResumeWork() {
   const t = useTranslations("sections");
@@ -78,7 +51,7 @@ export function ResumeWork() {
                         <strong>{tParsec("engineering")}</strong>
                         <ol className='list-decimal pl-5 space-y-1'>
                           {tParsec.raw("engineeringItems").map((item: string, index: number) => (
-                            <WorkDetailListItem
+                            <HoverPreviewListItem
                               key={index}
                               html={item}
                               hoverImageSrc={parsecEngineeringImages[index]}

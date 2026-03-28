@@ -92,7 +92,8 @@
       "Contributor to multiple large open source projects (Vant, Semi-Design, Vue, etc.)",
       "Proficient in various frontend frameworks (React, Nextjs, TanStack Start, Vue, etc.)",
       "Served as frontend architect and frontend technical leader, leading team technical architecture and performance optimization, self-developed team frontend scaffolding"
-    ]
+    ],
+    "itemImages": ["", "", "", "", "", ""]
   },
   "footer": {
     "copyright": "© 2026"

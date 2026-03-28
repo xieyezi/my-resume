@@ -86,7 +86,8 @@
       "担任过前端架构师, 主导团队技术架构和性能优化, 自研团队前端脚手架",
       "受邀参加过2022年重庆前端技术分享交流会，作为嘉宾进行技术分享",
       "拥有两篇技术发明专利, 并成功申请国家发明专利（公开号：CN115269034A 和 CN115686570A）"
-    ]
+    ],
+    "itemImages": ["/images/advantages/juejin.png", "/images/advantages/github.png", "", "", "", "", "/images/advantages/sharing.png", "/images/advantages/patent.png"]
   },
   "footer": {
     "copyright": "© 2026"
