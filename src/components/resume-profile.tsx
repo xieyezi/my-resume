@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { Mail, Phone, Github, MessageCircleMore, Twitter, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
-// import Profile from "@/static/avatar.png";
-// import Profile from "@/static/avatar2.jpg";
 
 export function ResumeProfile() {
   const t = useTranslations("profile");
