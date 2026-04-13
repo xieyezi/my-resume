@@ -11,7 +11,7 @@ export function ResumeProfile() {
     <header className='resume-header md:flex md:items-center md:justify-between md:flex-row-reverse mb-4'>
       <div className='flex justify-center md:justify-end md:flex-1'>
         <a href='https://www.xieyezi.info/' target='_self' className='relative w-28 h-28 rounded-full overflow-hidden block'>
-          <Image src='https://picui.ogmua.cn/s1/2026/03/28/69c773b2c95b5.webp' alt='Profile' fill className='object-cover' />
+          <Image src='https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/Ws4R/1706X1279/avatar2.jpg/webp' alt='Profile' fill className='object-cover' />
         </a>
       </div>
 

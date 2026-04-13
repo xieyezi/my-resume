@@ -30,7 +30,7 @@
         "Due to complex business logic and heavy data collection requirements, manual tracking implementation introduced high code intrusion. To solve this, developed the <strong>@pietra-auto-tracker</strong> plugin using AST, enabling zero-intrusion automatic tracking during build time, significantly improving data collection efficiency and reducing business code coupling",
         "Developed <strong>Pietra Devtool</strong>, which runs as an independent DevTool frontend process in development mode. It communicates with the Vite dev server via RPC and centralizes project metadata, build graphs, and resources into a single dashboard, solving the issue of fragmented debugging information such as module dependencies, static assets (images, CSS variables, custom components, hooks, etc.), and build processes"
       ],
-      "engineeringItemImages": ["", "", "/images/work/pietra-devtool.png"],
+      "engineeringItemImages": ["", "", "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3olI/3462X2120/pietra-devtool.png/webp"],
       "architecture": "Architecture Upgrades & Performance Optimization",
       "architectureItems": [
         "Refactored the official website to Next.js, implementing SSR (Server-Side Rendering) and ISR (Incremental Static Regeneration), reducing first-page load time and improving SEO traffic",
@@ -67,29 +67,15 @@
   "skills": {
     "javascript": {
       "title": "Proficient in frontend development using JavaScript (ES6) / TypeScript, with strong experience in the following frameworks",
-      "items": [
-        "React frameworks: Next.js / Astro",
-        "React state management: Zustand / Jotai / Redux",
-        "React component libraries: Radix UI / Ant Design",
-        "React utilities: React Query / Formik",
-        "React testing: React Testing Library"
-      ]
+      "items": ["React frameworks: Next.js / Astro", "React state management: Zustand / Jotai / Redux", "React component libraries: Radix UI / Ant Design", "React utilities: React Query / Formik", "React testing: React Testing Library"]
     },
     "css": {
       "title": "Proficient in CSS3 and related tools",
-      "items": [
-        "Styling frameworks: Tailwind CSS",
-        "Solutions: CSS Modules / Styled Components / Emotion",
-        "Preprocessors: Sass / PostCSS"
-      ]
+      "items": ["Styling frameworks: Tailwind CSS", "Solutions: CSS Modules / Styled Components / Emotion", "Preprocessors: Sass / PostCSS"]
     },
     "build": {
       "title": "Strong understanding of frontend engineering and build tools",
-      "items": [
-        "Experienced in using Webpack / Vite for web application bundling and performance optimization",
-        "Proficient in using Rollup for component library packaging and publishing",
-        "Familiar with code quality tools such as Prettier and ESLint"
-      ]
+      "items": ["Experienced in using Webpack / Vite for web application bundling and performance optimization", "Proficient in using Rollup for component library packaging and publishing", "Familiar with code quality tools such as Prettier and ESLint"]
     },
     "git": {
       "title": "Proficient in Git for version control and code management, familiar with Git flow"
@@ -114,14 +100,14 @@
       "Holder of two invention patents (CN115269034A and CN115686570A)"
     ],
     "itemImages": [
-      "https://picui.ogmua.cn/s1/2026/03/28/69c774a909529.webp",
-      "https://picui.ogmua.cn/s1/2026/03/28/69c7751044325.webp",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/Q8Zn/1934X424/juejin.png/webp",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/Jbgb/2092X1096/github.png/webp",
       "",
       "",
       "",
       "",
-      "https://picui.ogmua.cn/s1/2026/03/28/69c7751d5373b.webp",
-      "https://picui.ogmua.cn/s1/2026/03/28/69c775290f51a.webp"
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3vbr/1428X1520/sharing.png/webp",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/SXK6/2416X1114/patent.png/webp"
     ]
   },
   "footer": {

@@ -26,7 +26,7 @@
         "公司项目业务复杂，数据采集工作繁重，需要手动埋点且埋点代码对业务代码侵入性强，基于此问题场景，使用 AST 开发了<strong>@pietra-auto-tracker</strong> 插件, 实现了页面无痕埋点，在编译代码时进行自动埋点操作，极大减少了埋点代码对于业务代码的侵入性，同时提高了数据采集的效率",
         "基于公司的业务和代码背景，开发了<strong>Pietra Devtool</strong>工具，它可以在开发模式下挂一个独立的 DevTool 前端进程（单独开一个调试窗口），通过 RPC 和 Vite 开发服务器通信，把项目信息 + 构建图 + 资源等能力集中到一个面板里，解决了开发时，模块依赖、静态资源（例如图片、CSS变量、自定义组件、Hooks等）、构建过程等信息分散，排查成本高的问题"
       ],
-      "engineeringItemImages": ["", "", "/images/work/pietra-devtool.png"],
+      "engineeringItemImages": ["", "", "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3olI/3462X2120/pietra-devtool.png/webp"],
       "architecture": "架构升级 & 性能优化",
       "architectureItems": ["重构官网至 Next.js, SSR 服务端渲染 + ISR 增量静态生成，缩短首屏加载时间，提升 SEO 流量", "Bundle 优化: Tree-shaking + 动态导入, 生产包较原来减少67%", "Google 评分提升: 优化LCP, FCP, CLS指标, Search Console 评分从 40→90+"]
     },
@@ -87,7 +87,16 @@
       "受邀参加过2022年重庆前端技术分享交流会，作为嘉宾进行技术分享",
       "拥有两篇技术发明专利, 并成功申请国家发明专利（公开号：CN115269034A 和 CN115686570A）"
     ],
-    "itemImages": ["https://picui.ogmua.cn/s1/2026/03/28/69c774a909529.webp", "https://picui.ogmua.cn/s1/2026/03/28/69c7751044325.webp", "", "", "", "", "https://picui.ogmua.cn/s1/2026/03/28/69c7751d5373b.webp", "https://picui.ogmua.cn/s1/2026/03/28/69c775290f51a.webp"]
+    "itemImages": [
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/Q8Zn/1934X424/juejin.png/webp",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/Jbgb/2092X1096/github.png/webp",
+      "",
+      "",
+      "",
+      "",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3vbr/1428X1520/sharing.png/webp",
+      "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/SXK6/2416X1114/patent.png/webp"
+    ]
   },
   "footer": {
     "copyright": "© 2026"
