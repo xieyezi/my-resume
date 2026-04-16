@@ -6,6 +6,7 @@
     "twitter": "Twitter",
     "telegram": "Telegram",
     "wechat": "xieyezi-syc",
+    "phone": "17783887443",
     "email": "1435398529@qq.com"
   },
   "sections": {
@@ -19,16 +20,28 @@
       "company": "Parsec Technology Co., Ltd. (高级前端开发工程师 | 远程)",
       "period": "2024/01 - 2025/10",
       "responsibilities": "负责工作",
-      "responsibilitiesItems": ["开发 Pietra Creator Admin, Pietra Landing Page(官网)", "开发 Pietra AI Copilot, Sourcing AI Agent等AI工具", "开发团队内技术插件、工具(如<strong>Pietra Devtool</strong>), 提高团队DX"],
+      "responsibilitiesItems": [
+        "开发 Pietra Creator Admin, Pietra Landing Page(官网)",
+        "开发 Pietra AI Copilot, Sourcing AI Agent等AI工具",
+        "开发团队内技术插件、工具(如<strong>Pietra Devtool</strong>), 提高团队DX"
+      ],
       "engineering": "亮点工作",
       "engineeringItems": [
         "基于 AST 和 Vite 开发 <strong>@pietra/auto-import</strong> 插件，实现组件(包括自有组件和第三方组件)、图标、工具库（如Lodash等）自动导入，无需在顶部手动导入，从而减少手动导入代码，提高团队开发效率",
         "公司项目业务复杂，数据采集工作繁重，需要手动埋点且埋点代码对业务代码侵入性强，基于此问题场景，使用 AST 开发了<strong>@pietra-auto-tracker</strong> 插件, 实现了页面无痕埋点，在编译代码时进行自动埋点操作，极大减少了埋点代码对于业务代码的侵入性，同时提高了数据采集的效率",
         "基于公司的业务和代码背景，开发了<strong>Pietra Devtool</strong>工具，它可以在开发模式下挂一个独立的 DevTool 前端进程（单独开一个调试窗口），通过 RPC 和 Vite 开发服务器通信，把项目信息 + 构建图 + 资源等能力集中到一个面板里，解决了开发时，模块依赖、静态资源（例如图片、CSS变量、自定义组件、Hooks等）、构建过程等信息分散，排查成本高的问题"
       ],
-      "engineeringItemImages": ["", "", "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3olI/3462X2120/pietra-devtool.png/webp"],
+      "engineeringItemImages": [
+        "",
+        "",
+        "https://test.fukit.cn/autoupload/f/UMEYPF7R5wisQia7aduOCNiO_OyvX7mIgxFBfDMDErs/20260413/3olI/3462X2120/pietra-devtool.png/webp"
+      ],
       "architecture": "架构升级 & 性能优化",
-      "architectureItems": ["重构官网至 Next.js, SSR 服务端渲染 + ISR 增量静态生成，缩短首屏加载时间，提升 SEO 流量", "Bundle 优化: Tree-shaking + 动态导入, 生产包较原来减少67%", "Google 评分提升: 优化LCP, FCP, CLS指标, Search Console 评分从 40→90+"]
+      "architectureItems": [
+        "重构官网至 Next.js, SSR 服务端渲染 + ISR 增量静态生成，缩短首屏加载时间，提升 SEO 流量",
+        "Bundle 优化: Tree-shaking + 动态导入, 生产包较原来减少67%",
+        "Google 评分提升: 优化LCP, FCP, CLS指标, Search Console 评分从 40→90+"
+      ]
     },
     "changan": {
       "company": "长安汽车 (前端工程师 | 重庆)",
@@ -49,13 +62,23 @@
         "对项目进行了细粒度的性能优化，从构建层到资源加载层进行系统性改造，在 Webpack 层面，将原有冗长的配置进行模块化重构，并引入函数式方式组织配置逻辑，提升可维护性与扩展性，同时基于业务场景自定义 Webpack Loader，对特定资源进行编译期处理与优化，在资源加载方面，结合 CDN 对静态资源进行分发，并优化入口依赖结构，降低首屏包体积，从而提升整体加载性能与用户体验"
       ],
       "teamBuilding": "团队建设",
-      "teamBuildingItems": ["搭建团队技术规范文档中心，统一团队开发规范", "组织内部技术分享，提升团队技术水平", "<a class='hover:text-gray-600 underline' href='https://mp.weixin.qq.com/s/5YlTookMLJHmFApVxjiKFA' rel='noopener noreferrer' target='_blank'>代表公司参加技术交流会, 分享技术经验</a>"]
+      "teamBuildingItems": [
+        "搭建团队技术规范文档中心，统一团队开发规范",
+        "组织内部技术分享，提升团队技术水平",
+        "<a class='hover:text-gray-600 underline' href='https://mp.weixin.qq.com/s/5YlTookMLJHmFApVxjiKFA' rel='noopener noreferrer' target='_blank'>代表公司参加技术交流会, 分享技术经验</a>"
+      ]
     }
   },
   "skills": {
     "javascript": {
       "title": "使用 Javascript（ES6）/ Typescript 进行前端开发，并且熟练掌握以下框架",
-      "items": ["React 通用框架：Next.js / Astro", "React 状态管理：Zustand / Jotai / Redux", "React 组件库：Radix UI / Ant Design", "React 常用库：React Query / Formik", "React 测试: React Testing Library"]
+      "items": [
+        "React 通用框架：Next.js / Astro",
+        "React 状态管理：Zustand / Jotai / Redux",
+        "React 组件库：Radix UI / Ant Design",
+        "React 常用库：React Query / Formik",
+        "React 测试: React Testing Library"
+      ]
     },
     "css": {
       "title": "熟练使用 CSS3 以及周边工具",
@@ -63,7 +86,11 @@
     },
     "build": {
       "title": "掌握通用的前端工程化以及构建工具",
-      "items": ["使用 Webpack / Vite 完成Web 应用打包以及对应的前端性能优化的经验。", "掌握使用 Rollup 完成组件库打包以及发布的过程。", "Prettier / ESLint 管理编码风格标准。"]
+      "items": [
+        "使用 Webpack / Vite 完成Web 应用打包以及对应的前端性能优化的经验。",
+        "掌握使用 Rollup 完成组件库打包以及发布的过程。",
+        "Prettier / ESLint 管理编码风格标准。"
+      ]
     },
     "git": {
       "title": "熟练使用Git进行版本控制和代码托管，熟悉Git flow"
