@@ -1,0 +1,10 @@
+.git
+.codebase-memory
+.next
+out
+node_modules
+*.log
+.DS_Store
+.env*
+coverage
+tsconfig.tsbuildinfo

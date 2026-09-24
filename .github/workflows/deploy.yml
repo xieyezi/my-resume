@@ -1,0 +1,82 @@
+name: Deploy to Tencent Cloud
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: true
+
+env:
+  IMAGE_NAME: xieyezi-resume
+  CONTAINER_NAME: xieyezi-resume
+  SSH_HOST: ${{ vars.TENCENT_HOST }}
+  SSH_PORT: ${{ vars.TENCENT_PORT || '22' }}
+  SSH_USER: ${{ vars.TENCENT_USER }}
+  DEPLOY_PATH: /home/ubuntu/github/my-resume
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install sshpass
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes sshpass
+
+      - name: Prepare SSH host verification
+        env:
+          SSH_KNOWN_HOSTS: ${{ secrets.TENCENT_KNOWN_HOSTS }}
+        run: |
+          set -Eeuo pipefail
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+
+      - name: Pull, build and restart on Tencent Cloud
+        env:
+          SSHPASS: ${{ secrets.TENCENT_PASSWORD }}
+        run: |
+          set -Eeuo pipefail
+
+          sshpass -e ssh \
+            -p "$SSH_PORT" \
+            -o BatchMode=no \
+            "$SSH_USER@$SSH_HOST" \
+            "DEPLOY_PATH='$DEPLOY_PATH' IMAGE_NAME='$IMAGE_NAME' CONTAINER_NAME='$CONTAINER_NAME' IMAGE_TAG='$GITHUB_SHA' GIT_BRANCH='main' bash -s" <<'REMOTE_SCRIPT'
+          set -Eeuo pipefail
+
+          cd "$DEPLOY_PATH"
+          git pull --ff-only origin "$GIT_BRANCH"
+
+          # Build before stopping the current container so a failed build keeps
+          # the currently deployed version available.
+          docker build --tag "$IMAGE_NAME:$IMAGE_TAG" .
+
+          docker rm -f "$CONTAINER_NAME" 2>/dev/null || true
+          docker run -d \
+            --name "$CONTAINER_NAME" \
+            --restart unless-stopped \
+            -p "8080:80" \
+            "$IMAGE_NAME:$IMAGE_TAG"
+
+          for _ in $(seq 1 20); do
+            status="$(docker inspect -f '{{.State.Status}}' "$CONTAINER_NAME" 2>/dev/null || true)"
+            if [ "$status" = "running" ]; then
+              docker image prune -f
+              exit 0
+            fi
+            sleep 1
+          done
+
+          docker logs --tail=100 "$CONTAINER_NAME" || true
+          exit 1
+          REMOTE_SCRIPT
